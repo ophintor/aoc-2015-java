@@ -1,4 +1,5 @@
 package com.aoc2015;
+
 import java.io.IOException;
 import java.util.*;
 import static com.aoc2015.Util.ReadFile;
