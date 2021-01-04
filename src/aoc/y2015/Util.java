@@ -19,4 +19,13 @@ public class Util {
         }
         return result;
     }
+
+    public static boolean isNumber(String strNumber) {
+        try {
+            Integer.parseInt(strNumber);
+        } catch (NumberFormatException nfe) {
+            return false;
+        }
+        return true;
+    }
 }

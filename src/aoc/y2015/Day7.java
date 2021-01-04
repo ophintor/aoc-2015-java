@@ -15,17 +15,8 @@ public class Day7 {
         }
     }
 
-    private static boolean isNumber(String strNumber) {
-        try {
-            Integer.parseInt(strNumber);
-        } catch (NumberFormatException nfe) {
-            return false;
-        }
-        return true;
-    }
-
     public static int findSignal(Map<String, String> circuit, String key) {
-        if (isNumber(key)) {
+        if (Util.isNumber(key)) {
             return (Integer.parseInt(key));
         } else if (circuit.get(key).contains("NOT ")) {
             String newKey = circuit.get(key).split(" ")[1];
