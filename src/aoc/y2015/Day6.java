@@ -1,17 +1,15 @@
-package com.aoc2015;
+package aoc.y2015;
 
 import java.io.IOException;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static com.aoc2015.Util.ReadFile;
-
 public class Day6 {
     static List<String> data;
     static {
         try {
-            data = ReadFile("resources/input6.txt");
+            data = Util.ReadFile("resources/input6.txt");
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }

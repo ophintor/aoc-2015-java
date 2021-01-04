@@ -1,15 +1,13 @@
-package com.aoc2015;
+package aoc.y2015;
 
 import java.io.IOException;
 import java.util.*;
-
-import static com.aoc2015.Util.ReadFile;
 
 public class Day5 {
     static List<String> data;
     static {
         try {
-            data = ReadFile("resources/input5.txt");
+            data = Util.ReadFile("resources/input5.txt");
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }

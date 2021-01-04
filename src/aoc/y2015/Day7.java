@@ -1,17 +1,15 @@
-package com.aoc2015;
+package aoc.y2015;
 
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.aoc2015.Util.ReadFile;
-
 public class Day7 {
     static List<String> data;
     static {
         try {
-            data = ReadFile("resources/input7.txt");
+            data = Util.ReadFile("resources/input7.txt");
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }

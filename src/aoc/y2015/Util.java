@@ -1,4 +1,4 @@
-package com.aoc2015;
+package aoc.y2015;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
